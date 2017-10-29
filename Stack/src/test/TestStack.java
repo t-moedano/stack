@@ -22,6 +22,9 @@ public class TestStack
 		assertEquals(stackElements[0], 3);
 	}
 	
+	/**
+	* test if the stack return the correct minimun value
+	*/
 	@Test
 	public void testMinimumValue()
 	{
@@ -34,6 +37,9 @@ public class TestStack
 		assertEquals(minimumValue, 1);
 	}
 	
+	/**
+	* Test if push more items than the capacoty of stack allow than the elements are not pushed.
+	*/
 	@Test
 	public void testMaximumSizeRestriction()
 	{
@@ -48,6 +54,9 @@ public class TestStack
 		assertEquals(stack[top], 10);
 	}
 	
+	/*
+	* Test if popping an element from the stack works correctly
+	*/
 	@Test
 	public void testPopElement()
 	{
@@ -61,6 +70,9 @@ public class TestStack
 		assertEquals(stack[top], 7);
 	}
 	
+	/*
+	* Test if stack knows how to handle when try to pop element of en empty list
+	*/
 	@Test
 	public void testEmptyStackRestriction()
 	{
@@ -74,6 +86,9 @@ public class TestStack
 		assertEquals(top, -1);
 	}
 	
+	/*
+	* Test if the stack return the correctly minimun value after popping the first minimum value of the stack
+	*/
 	@Test
 	public void testMinValueAfterPop()
 	{
